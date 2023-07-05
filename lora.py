@@ -81,8 +81,6 @@ class ExLlamaLora:
 
             # Check that shape is compatible
 
-            assert isinstance(target_module, Ex4bitLinear)
-
             if lora_half == "lora_A":
                 in_features = tensor.shape[1]
                 out_features = None
